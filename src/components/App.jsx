@@ -21,7 +21,7 @@ class App extends Component {
   };
 
   // Рендер картинки (if state was updated)
-  componetDidUpdate(_, prevState) {
+  componentDidUpdate(_, prevState) {
     if (prevState.searchQuery !== this.state.searchQuery) {
       this.getDataImages();
     }
