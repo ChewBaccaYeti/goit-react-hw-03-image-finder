@@ -6,11 +6,7 @@ export const ImageGallery = ({ items, getItemClick }) => {
   return (
     <List>
       {items.map(item => (
-        <GalleryItem
-          key={item.id}
-          item={item}
-          getItemClick={item.getItemClick}
-        />
+        <GalleryItem key={item.id} item={item} getItemClick={getItemClick} />
       ))}
     </List>
   );
