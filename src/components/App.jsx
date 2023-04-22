@@ -67,8 +67,8 @@ class App extends Component {
   };
 
   render() {
-    const { images, isModalOpen, largeImage, isLoading, error } = this.state;
-    const lengthImages = images.length >= 14;
+    const { images, largeImage, isModalOpen, isLoading, error } = this.state;
+    const lengthImages = images.length >= 12;
 
     return (
       <Container>
@@ -83,6 +83,7 @@ class App extends Component {
             onClick={this.toggleShowModal}
           />
         )}
+
         <GlobalStyle />
       </Container>
     );

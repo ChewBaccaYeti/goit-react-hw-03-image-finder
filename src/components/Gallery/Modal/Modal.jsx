@@ -30,7 +30,7 @@ export class ModalOverlay extends Component {
     return (
       <Overlay onClick={this.handleClick}>
         <Modal>
-          <img src={this.props.largeImage} alt="" />
+          <img src={this.props.largeImageURL} alt="" />
         </Modal>
       </Overlay>
     );
